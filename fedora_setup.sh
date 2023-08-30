@@ -47,7 +47,7 @@ dnf remove -y gnome-boxes
 dnf remove -y libreoffice*
 
 # Remove other non-essential programs (example)
-dnf remove -y cheese rhythmbox gnome-clocks gnome-maps gnome-characters gnome-characters gnome-weather gnome-contacts
+dnf remove -y cheese rhythmbox gnome-clocks gnome-maps gnome-characters gnome-characters gnome-weather gnome-contacts gnome-tour
 dnf remove -y firefox
 dnf update -y
 
@@ -63,7 +63,7 @@ dnf install gnome-tweaks -y
 dnf install papirus-icon-theme -y
 dnf install gnome-shell-extensions -y
 dnf install neofetch -y
-
+dnf install btop -y
 dnf install curl -y
 
 dnf install qemu -y
@@ -94,10 +94,12 @@ sudo fc-cache -f -v
 ## Other non-official binaries will conflict with Speedtest CLI
 # Example how to remove using yum
 # rpm -qa | grep speedtest | xargs -I {} sudo yum -y remove {}
-curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.rpm.sh | sudo bash
-dnf install speedtest
+# curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.rpm.sh | sudo bash
+# dnf install speedtest
 flatpak install -y flathub com.raggesilver.BlackBox
 flatpak install -y flathub org.gnome.Extensions
+flatpak install -y flathub com.discordapp.Discord
+flatpak install -y flathub com.spotify.Client
 
 quiet splash initcall_blacklist=amd_pstate_init amd_pstate.enable=0
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
@@ -112,4 +114,4 @@ systemctl status auto-cpufreq
 echo q | command
 cd ..
 
-sudo reboot
+sudo reboot -f
