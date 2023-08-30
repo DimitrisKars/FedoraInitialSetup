@@ -88,6 +88,16 @@ sudo mv *.ttf /usr/share/fonts/
 # sudo mv *.otf /usr/share/fonts/
 sudo fc-cache -f -v
 
+
+wget https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip
+mkdir -p ~/.fonts
+
+sudo mv ./fonts/ttf/*.ttf /usr/share/fonts/   
+# or if they are .otf files
+# sudo mv *.otf /usr/share/fonts/
+sudo fc-cache -f -v
+
+
 ## If migrating from prior bintray install instructions please first...
 # sudo rm /etc/yum.repos.d/bintray-ookla-rhel.repo
 # sudo yum remove speedtest
