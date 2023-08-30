@@ -14,29 +14,29 @@ else
   sh -c "$(wget -O- https://raw.githubusercontent.com/romkatv/zsh4humans/v5/install)"
 fi
 
-echo 2 | command
-echo 1 | command
-echo n | command
-echo n | command
-echo 1 | command
-echo y | command
-echo y | command
-# --------
-echo y | command
-echo n | command
-echo n | command
-# --------
-echo 3 | command
-echo 1 | command
-echo 2 | command
-echo 1 | command
-echo 1 | command
-echo 1 | command
-echo 1 | command
-echo 2 | command
-echo 1 | command
-echo n | command
-echo n | command
+# echo 2 | command
+# echo 1 | command
+# echo n | command
+# echo n | command
+# echo 1 | command
+# echo y | command
+# echo y | command
+# # --------
+# echo y | command
+# echo n | command
+# echo n | command
+# # --------
+# echo 3 | command
+# echo 1 | command
+# echo 2 | command
+# echo 1 | command
+# echo 1 | command
+# echo 1 | command
+# echo 1 | command
+# echo 2 | command
+# echo 1 | command
+# echo n | command
+# echo n | command
 
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 # Remove games
